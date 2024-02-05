@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Abhiyan Gautam - Portfolio</title>
+    <title>Abhiyan's Portfolio</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
     <script src="script.js"></script>
-    <header>
-        <h1>Abhiyan Gautam</h1>
-        <p>Computer Enthusiast</p>
-    </header>
     <nav id="desktop-nav">
-        <div class="logo">Portfolio</div>
+        <div class="logo">Abhiyan</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -35,103 +30,302 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#work-experience" onclick="toggleMenu()">Work Experience</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+    <section id="profile">
+        <div class="section__text">
+          <p class="section__text__p1">Hey, this is</p>
+          <h1 class="title">Abhiyan Gautam</h1>
+          <p class="section__text__p2">Computer Enthusiast</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/Resume.pdf')"
+            >
+              Download CV
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/abhiiyan/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/esc4norrr/'"
+            />
+          </div>
+        </div>
+      </section>
     <section id="about">
-                <h2>About Me</h2>
-                <div class="card">
-                <p>
-                    Welcome to my portfolio website! I am a BSc CSIT (Computer Science and Information Technology) graduate, deeply passionate about web development and creating exceptional web experiences. My expertise extends to AI/ML projects, and I have substantial professional experience working at LIS NEPAL in GLOBAL BUSINESS SERVICES. Additionally, I have leveraged CodeIgniter for CNC, showcasing my versatility and technical proficiency in various aspects of technology and software development.</p>
-            </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill-cards">
-            <div class="card">
-                <h3>SQL and Database</h3>
-                <p>Developed strong SQL skills through coursework in Database Management and Administration, further enhanced by practical experience during an internship at LIS Nepal. Solid proficiency in SQL through hands-on application in a professional environment.</p>
-            </div>
-            <div class="card">
-                <h3>Power BI</h3>
-                <p>Used Power BI to create and report dashboards from Snowflake Data Warehouse data, collaborating globally to customize these for various use cases and conducting employee data modeling to meet specific business needs.</p>
-            </div>
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>
-                    Developed proficiency in JavaScript through academic coursework in "Web Technologies," further applied in creating configurations for an automation framework and developing Snowflake procedures. Demonstrated versatility and practical application of JS in both front-end development and data management tasks.</p>
-            </div>
-            <div class="card">
-                <h3>Python</h3>
-                <p>Developed proficiency in Python by attending various bootcamps and engaging in project works. This expertise was further applied in creating an automation framework for auditing during my internship, showcasing practical, real-world Python application.</p>
-            </div>
-            <div class="card">
-                <h3>PHP</h3>
-                <p>
-In my part-time role at cpcproducts.com.au, usage of CodeIgniter for backend development, enhancing scalable web application solutions and honing my technical expertise.</p>
-            </div>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br/>Software Engineer <br/>(Data Analysis, Backend Consultant, AI Training)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science and Information Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                A Computer Science graduate with a skillset spanning machine learning projects to backend consulting. Holds significant professional experience in data handling at LIS NEPAL within Global Business Services. Further expertise includes utilizing CodeIgniter for CNC and engaging in AI training with Invisible, demonstrating versatility and technical proficiency in diverse technology and software development areas.
+            </p>
+        </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="card-row">
-            <div class="card">
-                <h3>ThreatFinder: YoloV7 Powered Detection of Weapons and Violence</h3>
-                <p>ThreatFinder, my culminating project for the BSc CSIT degree, integrates the cutting-edge YOLOv7 algorithm to detect anomalies in real-time video streams, recorded videos, and images, specifically targeting security threats such as unauthorized weapons and potential violence. The project's frontend is developed using Streamlit, enhancing user interaction and accessibility. My journey in completing ThreatFinder involved extensive research, including studying over 10 scholarly articles on image detection and analyzing both current and historical trends in the field. This thorough research approach was pivotal in the successful development and execution of the project.</p>                <br> <br>
-                <a href="https://github.com/esc4norrr/threatfinder-yolov7" >Threatfinder</a>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- ThreatFinder Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/threatfinder.png" alt="ThreatFinder" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">ThreatFinder: YoloV7 Powered Detection</h2>
+              <p>Integrates YOLOv7 for real-time threat detection in video streams, using Streamlit for user interface.</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/esc4norrr/threatfinder-yolov7'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/esc4norrr/threatfinder-yolov7/tree/main/demo'">Demo</button>
+              </div>
             </div>
-            <div class="card">
-                <h3>Aau Laijau: Rental Website</h3>
-                <p>
-                    "Aau Laijau" is a web application that enables users to rent out items or hire them affordably, creating a shared economy that benefits both item owners and renters. It features a secure login, online payments, and an interactive platform for listing and managing products, all designed to be cost-effective and user-friendly.</p>
-                    <br> <br>
-                    <a href="https://github.com/esc4norrr/">Aau Laijau</a>
-                </div>
+            <!-- Aau Laijau Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/aaulaijau.png" alt="Aau Laijau" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">Aau Laijau: Rental Website</h2>
+              <p>Facilitates affordable item rentals with features like secure login and online payments.</p>
+            </div>
+            <!-- Auditoria Interna Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/auditoria-interna.png" alt="Auditoria Interna" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">auditoria-interna</h2>
+              <p>Streamlines Excel auditing with a desktop GUI application developed using PyQt5 and the power of Snowflake, enhancing efficiency.</p>
+            </div>
+            <!-- SNL (Snakes & Ladders) -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/snl.png" alt="SNL" class="project-img" />
+              </div>
+              <h2 class="experience-sub-title project-title">SNL (Snakes & Ladders)</h2>
+              <p>Digital rendition of the classic board game using C and OpenGL, offering a virtual gameplay experience with visual elements.</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/esc4norrr/snl'">Github</button>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
-        <div class="card-row">
-            <div class="card">
-                <h3>auditoria-interna</h3>
-                <p>
-                    "Auditoria-Interna" is a desktop GUI application developed using PyQt5 to streamline the auditing process. It automates tasks like file formatting, uploading to Snowflake, procedure execution, file conversion from CSV to XLSX with automated highlighting, enhancing efficiency and reducing manual work.</p>
-                    <br> <br>
-                    <a href="https://github.com/esc4norrr/auditoria-interna">Auditoria Interna</a>
-                </div>
-            <div class="card">
-                <h3>SNL (Snakes & Ladders)</h3>
-                <p>Snakes and Ladders in C" is a virtual rendition of the classic board game, realized through the C programming language with OpenGL for graphics. It offers players a digital space to enjoy the timeless game, complete with visual elements like rolling dice and moving tokens.</p>
-                <br> <br>
-                    <a href="https://github.com/esc4norrr/snl">snl</a>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      </section>
+      <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Web Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
             </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Data Engineering</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Snowflake</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                    <img
+                      src="./assets/bullet.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Power BI</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/bullet.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Azure Pipelines</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                      <img
+                        src="./assets/bullet.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <div>
+                        <h3>MS Excel</h3>
+                        <p>Experienced</p>
+                      </div>
+                    </article>
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/bullet.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Oracle DB</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <div class="card-row">
-            <div class="card">
-                <h3>Software Engineering Intern</h3>
-                <h4>May 2023 - Nov 2023</h4>
-                <p>At LIS Nepal Pvt. Ltd., my primary responsibility was to develop a deep understanding of various key areas including data modeling, ETL development and testing, Data Warehousing concepts, Reporting tools, and Business Intelligence strategies. I mainly focused on data modeling and manipulation, utilizing tools like Snowflake and Power BI. A significant part of my role involved creating Azure pipelines for efficient data transfer from Oracle Netsuite to Snowflake. My major contribution to the team was developing a GUI using PyQt5. This interface streamlined the audit process, encompassing everything from loading CSV files into Snowflake and executing procedures for audits, to downloading and custom-highlighting data as required.</p>            </div>
-            <div class="card">
-                <h3>Assistant Backend Consultant (cpcproducts.com.au)</h3>
-                <h4>Apr 2023 - Present</h4>
-                <p>At CPC in my current part-time consultant, I am engaged in backend development using CodeIgniter, a PHP framework. This role involves managing backend problems and providing efficient solutions, which allows me to continuously enhance my technical skills in PHP and related technologies.</p>
-            </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out to me at <u>z.abhiyan@gmail.com</u>.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Abhiyan Gautam</p>
-    </footer>
-    <script src="script.js"></script>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">z.abhiyan@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/abhiiyan/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2024 Abhiyan Gautam. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
 </body>
 </html>

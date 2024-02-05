@@ -1,14 +1,13 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -219,6 +218,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 20px;
 }
 
 .btn {
@@ -314,6 +314,49 @@ section {
   margin: auto 0;
 }
 
+/* SKILLS SECTION */
+#skills {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem; /* Adjusted for better scaling */
+  margin-bottom: 1rem; /* Reduced margin for smaller screens */
+}
+
+.skills-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-containers {
+  width: 100%; /* Ensures full width on small screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Smaller min width for better fit */
+  gap: 1.5rem; /* Reduced gap for tighter layout */
+}
+
+.details-container {
+  background: #f9f9f9;
+  padding: 15px; /* Slightly reduced padding */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.25rem; /* Reduced font size for smaller screens */
+  margin-bottom: 0.75rem; /* Reduced margin */
+}
+
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -354,9 +397,9 @@ article .icon {
 }
 
 /* PROJECTS SECTION */
-
 #projects {
   position: relative;
+  padding: 20px 0;
 }
 
 .color-container {
@@ -379,6 +422,7 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+
 
 /* CONTACT */
 
