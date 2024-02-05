@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Abhiyan Gautam - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
 </head>
 <body>
+    <script src="script.js"></script>
     <header>
         <h1>Abhiyan Gautam</h1>
         <p>Computer Enthusiast</p>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav id="desktop-nav">
+        <div class="logo">Portfolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-
+    <nav id="hamburger-nav">
+        <div class="logo">Portfolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#work-experience" onclick="toggleMenu()">Work Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
     <section id="about">
                 <h2>About Me</h2>
                 <div class="card">
